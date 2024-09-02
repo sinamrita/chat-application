@@ -1,0 +1,148 @@
+.sidebar {
+  min-width: 250px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  min-height: 500px;
+  border-right: 1px solid slategrey;
+  /* min-height: fit-content */
+}
+
+.sidebar hr {
+  border: 1px solid rgba(112, 128, 144, 0.514);
+}
+
+.searchInput {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.typing {
+  color: lime;
+  font-size: 0.7rem;
+}
+
+.searchInput .input input {
+  border: none;
+  outline: none;
+  padding: 0.6rem 0.7rem;
+  border-radius: 20px;
+  color: rgb(184, 184, 184);
+  background-color: black;
+}
+
+.searchInput .input input::placeholder {
+  color: rgb(184, 184, 184);
+  font-weight: 500;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #42a5f5;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.icon svg {
+  color: #fff;
+}
+
+.conversations {
+  height: 310px;
+  overflow-y: auto;
+}
+
+.logoutBtn .btn {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.logoutBtn .btn svg {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.tile {
+  padding: 0.4rem;
+  border-bottom: 1px solid rgba(112, 128, 144, 0.514);
+  display: flex;
+  cursor: pointer;
+}
+
+.tile:hover {
+  background-color: #42a5f5;
+  border-radius: 5px;
+}
+
+.tile .left {
+  flex: 1 1;
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.tile .left .avatar {
+  width: 48px;
+  height: 48px;
+  border: 1.5px solid black;
+  border-radius: 50%;
+  position: relative;
+}
+
+.left .name {
+  flex: 1 1;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.tile .left .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.online.avatar span {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  right: 0;
+  top: 4px;
+  border: 1px solid black;
+  background-color: lime;
+}
+
+.activeTile {
+  background-color: #42a5f5;
+  border-radius: 5px;
+}
+
+.indicator {
+  background-color: lime;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}

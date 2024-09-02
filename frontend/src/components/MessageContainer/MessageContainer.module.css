@@ -1,0 +1,101 @@
+.messageCont {
+  flex: 1 1;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.heading {
+  background-color: slategray;
+  padding: 0.7rem 1rem;
+  border-top-right-radius: 10px;
+}
+
+.warning p {
+  color: rgb(184, 184, 184);
+  text-align: center;
+  font-size: 14px;
+}
+
+.heading p {
+  font-size: 0.8rem;
+  display: flex;
+  gap: 0.3rem;
+}
+
+.heading p span:nth-child(1) {
+  color: rgb(184, 184, 184);
+}
+
+.messageContainer {
+  height: 405px;
+  overflow-y: auto;
+}
+
+.messageInputCont {
+  display: flex;
+  margin: 0 1rem;
+  margin-bottom: 0.7rem;
+  border-radius: 10px;
+  background-color: black;
+}
+
+.messageInputCont input {
+  flex: 1 1;
+  border: none;
+  outline: none;
+  padding: 0.7rem 0.7rem;
+  border-radius: 10px;
+  color: rgb(184, 184, 184);
+  background-color: transparent;
+}
+
+.messageInputCont input::placeholder {
+  color: rgb(184, 184, 184);
+  font-weight: 500;
+}
+
+.sendBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.7rem;
+}
+
+.sendBtn svg {
+  color: rgb(184, 184, 184);
+  font-size: 1.1rem;
+}
+
+.notSelectUserContainer {
+  height: 512px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentNoSelect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 1.2rem;
+  color: rgb(184, 184, 184);
+  font-weight: 700;
+}
+
+.fileHide {
+  display: none;
+}
+
+.contentNoSelect p {
+  text-align: center;
+}
+
+.contentNoSelect svg {
+  font-size: 4rem;
+}

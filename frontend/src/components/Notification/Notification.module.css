@@ -1,0 +1,26 @@
+.notify {
+  position: relative;
+  cursor: pointer;
+}
+
+.notify svg {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.alert::before {
+  content: attr(data-count);
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  color: #fff;
+  right: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.6rem;
+  border-radius: 50%;
+  font-weight: 800;
+  top: -5px;
+}
